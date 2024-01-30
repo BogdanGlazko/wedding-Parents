@@ -1,13 +1,62 @@
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 19px;
+    color: #000000 !important;
+    padding: 0 !important;
+    -ms-overflow-style: none !important;
+    scrollbar-width: none !important;
+    background-color: #ffffff !important;
+    color: #000000
+}
+
+body::-webkit-scrollbar {
+    display: none !important;
+}
+p , div{
+    color: #000000
+}
+
+.ebGaramond{
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 25px;
+    font-optical-sizing: auto;
+    color: #000000
+}
 /*backgroung*/
 .cater3-movingBG {
     height: 100%;
-    background-image: url("../assets/images/bg2.jpg");
+    background-image: url("https://i.imgur.com/wwTrjIM.jpeg");
     background-size: 110%;
     background-repeat: repeat-x;
-    /*background-repeat: repeat-y;*/
-    animation: animatedBackground 20s linear alternate infinite;
+    animation: 20s linear alternate infinite animatedBackground;
+    -webkit-animation: 20s linear alternate infinite animatedBackground;
+    -moz-animation: 20s linear alternate infinite animatedBackground;
+    -o-animation: 20s linear alternate infinite animatedBackground;
 }
 
+@-webkit-keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    50% { background-position: 90% 0; }
+    100% { background-position: 52% 0; }
+}
+@-moz-keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    50% { background-position: 90% 0; }
+    100% { background-position: 52% 0; }
+}
+@-o-keyframes animatedBackground {
+    0% { background-position: 0 0; }
+    50% { background-position: 90% 0; }
+    100% { background-position: 52% 0; }
+}
 @keyframes animatedBackground {
     0% { background-position: 0 0; }
     50% { background-position: 90% 0; }
@@ -34,20 +83,12 @@
 
 }
 .flyIn {
-    /*color: #000000 !important;*/
-    /*font-family: "Playfair Display", serif;*/
-    /*font-optical-sizing: auto;*/
-    /*font-weight: 400;*/
-    /*font-size: 3px;*/
-    /*font-style: normal;*/
     font-family: "Cormorant Garamond", serif;
     font-weight: 300;
     font-style: normal;
     font-optical-sizing: auto;
     color: #000000;
     text-transform: uppercase;
-    /*line-height:1.2em;*/
-    /*position:relative;*/
     text-shadow: 2px 2px 40px rgba(0,0,0,0.7);
 }
 .lineOne {
@@ -67,7 +108,6 @@
 }
 .lineOne, .lineTwo, .lineThree {
     font-size:2.5em;
-    /*font-weight: bold;*/
     letter-spacing: 1px;
 }
 .lineFour {
@@ -79,7 +119,6 @@
     display:inline-block;
     color:#000;
     box-size:border-box;
-    max-width:63%;
     max-width: 22em;
     font-size: 32px;
     padding: .2em .5em;
@@ -95,114 +134,13 @@
 }
 /*end backgroung*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-html {
-    scroll-behavior: smooth !important;
-}
-
-body {
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 19px;
-    color: #000000 !important;
-    padding: 0 !important;
-    -ms-overflow-style: none !important;
-    scrollbar-width: none !important;
-    background-color: #ffffff !important;
-    color: #000000
-}
-.ebGaramond{
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 300;
-    font-style: normal;
-    font-size: 25px;
-    font-optical-sizing: auto;
-    color: #000000
-}
-
-.lightNav{
-    background-color: #c4c4c4;
-}
-.nav-link i{
-    color: #363636;
-}.nav-link span{
-    color: #363636;
-}
-
-
-
-body::-webkit-scrollbar {
-    display: none !important;
-}
-p , div{
-    color: #000000
-}
-
 #home{
-margin-top: -25px;
+    margin-top: -25px;
+}
+.mb-2{
+    margin-bottom: 2.5rem !important;
 }
 
-.arrow {
-    width: 100px;
-    height: 236px;
-    margin: 20px;
-    display: inline-block;
-    position: relative;
-}
-
-.arrow::before {
-     content: '';
-     display: block;
-     width: 30px;
-     height: 30px;
-     top: 50%;
-     left: 50%;
-     border-style: solid;
-     border-color: #000;
-     border-width: 2px 2px 0 0;
-     position: absolute;
-     transform-origin: 50% 50%;
- }
-.down::before {
-    transform: rotate(135deg);
-    margin: -20px 0 0 -15px;
-}
-.arrow.down::after {
-    content: '';
-    display: block;
-    left: 49.3%;
-    height: 133px;
-    width: 0px;
-    border-style: solid;
-    border-color: #000;
-    border-width: 1px;
-    position: absolute;
-    transform-origin: 50% 50%;
-}
 .my-4{
     font-size: 2.8rem !important;
 }
@@ -216,7 +154,6 @@ margin-top: -25px;
 .scrollJustify{
     display: flex;
     flex-direction: column;
-
 }
 .dayProgrammWrapper{
     display: flex;
@@ -235,7 +172,6 @@ margin-top: -25px;
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 2%;
-    /*margin-top: 5%;*/
 }
 .alignProgrammElement{
     text-align: left;
@@ -270,7 +206,6 @@ margin-top: -25px;
     font-weight: 400;
     font-size: 3px;
     font-style: normal;
-
 }
 
 .font-cormorant {
@@ -281,7 +216,6 @@ margin-top: -25px;
     color: #000000 !important;
 }
 .img-cropWelcomePage{
-    width: 100%;
     width: 14rem;
     height: 14rem;
     position: relative;
@@ -382,12 +316,7 @@ margin-top: -25px;
     inset: 0 !important;
     width: 100%;
     height: 100%;
-    /*background-image: linear-gradient(to right, #c0c0c0 0%, #f6f6f6 100%);*/
     animation: color 8s infinite linear;
-    /*background-image: url("../assets/images/bgMain.jpeg");*/
-    /*background-size: cover;*/
-    /*box-shadow: inset 0em 6em 60em 7em #161717;*/
-    /*background-color: #111111;*/
     z-index: 1056 !important;
 }
 @keyframes color {
@@ -491,12 +420,6 @@ footer {
     background-color: #b5b5b5;
     margin-right: 3%;
 }
-/*.col2{*/
-/*    width: 50px;*/
-/*    height: 50px;*/
-/*    background-color: #030209;*/
-/*    margin-right: 3%;*/
-/*}*/
 
 .col3{
     width: 50px;
@@ -536,13 +459,6 @@ footer {
     text-align: center;
 }
 
-
-/*.py-4 img{*/
-/*    border-radius: 20px;*/
-/*    width: 50%;*/
-/*    !*height: 30%;*!*/
-/*}*/
-
 .invitewithPhotoWrapper{
     display: flex;
     flex-direction: column;
@@ -559,25 +475,64 @@ footer {
     border-top: 3px solid #a1a1a1;
 }
 .perpendicular-line {
-    /* width: 70px; */
-    /* margin: auto; */
     height: 100%;
     min-height: 50px;
-    /* margin-top: 50px; */
     margin-left: 30px;
-    /* transform: rotate(90deg); */
-    /* border-color: #000000; */
 }
 hr {
     margin: 1rem 0;
     color: inherit;
     border: 0;
-    border-left: var(--bs-border-width) solid;
+    border-left: solid;
     opacity: .25;
 }
 .dayProgramm :nth-child(0){
     font-size: 45px;
 }
+.text-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.weWillGratefull{
+    margin-top: 11%;
+    text-align: center;
+}
+
+
+.header1{
+    font-size:2.6rem;
+}
+
+
+/*counter */
+
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 2rem;
+}
+
+li {
+    background: rgba(33, 33, 33, 0.04);
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0.5rem;
+    color: #000000;
+}
+
+li span {
+    font-size: 2rem;
+}
+
+/*end*/
+
+
+/*MEDIA@@@@@@@*/
 
 @media screen and (max-width: 770px){
     .textAlignMessageWidth{
@@ -600,6 +555,11 @@ hr {
     .weWillGratefull{
         font-size: 1.75rem !important;
     }
+    .cater3-movingBG {
+        background-size: 140%;
+        background-image: url("https://i.imgur.com/wwTrjIM.jpeg");
+
+    }
 }
 @media screen and (min-width: 985px) {
     .cropPrev>img, .cropPrevBottom>img {
@@ -615,49 +575,8 @@ hr {
         border-radius: 2px;
         width: 50%;
         box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-        /*margin-bottom: -80px;*/
     }
 
-}
-
-.text-center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.weWillGratefull{
-    margin-top: 11%;
-    text-align: center;
-}
-
-/*counter */
-
-ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-top: 2rem;
-}
-
-li {
-    background: rgba(33, 33, 33, 0.04);
-    border-radius: 5px;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    margin: 0 0.5rem;
-    color: #000000;
-    /*box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);*/
-}
-
-li span {
-    font-size: 2rem;
-}
-
-/*end*/
-.header1{
-    font-size:2.6rem;
 }
 
 @media screen and (max-width: 432px){
@@ -676,9 +595,8 @@ li span {
     }
     .cater3-movingBG {
         animation: animatedBackground 50s linear infinite reverse;
-        background-size: 280%;
-        background-image: url("../assets/images/bg2.jpg");
-
+        background-size: 180%;
+        background-image: url("https://i.imgur.com/wwTrjIM.jpeg");
     }
 }
 
@@ -692,6 +610,8 @@ li span {
     }
 
 }
+
+/*MEDIA END @@@@*/
 
 
 
